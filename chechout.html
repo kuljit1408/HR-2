@@ -1,0 +1,220 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>HR Superhero</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Flowers Website">
+		<meta name="keywords" content="Flowers, Order, feedback">
+		<meta name="author" content="Gurpreet Kaur">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="images/logo.jfif" sizes="16x16">
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+    <style>
+    .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        margin: 0 -16px;
+      }
+      
+      .col-25 {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+      }
+      
+      .col-50 {
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+      }
+      
+      .col-75 {
+        -ms-flex: 75%; /* IE10 */
+        flex: 75%;
+      }
+      
+      .col-25,
+      .col-50,
+      .col-75 {
+        padding: 0 16px;
+      }
+      
+      .container {
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+        max-width: 55.6em;
+        margin-top: 12px;
+        margin-left: auto;
+        margin-right: auto;
+     
+      }
+      
+      input[type=text] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      
+      label {
+        margin-bottom: 10px;
+        display: block;
+      }
+      
+      .icon-container {
+        margin-bottom: 20px;
+        padding: 7px 0;
+        font-size: 24px;
+      }
+      
+      .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px;
+        margin-left: 18px;
+    /* padding-right: 65px; */
+    margin-right: -10px;
+        border: none;
+        width: 100%;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 17px;
+      }
+      
+      .btn:hover {
+        background-color: #45a049;
+      }
+      
+      a {
+        color: #2196F3;
+      }
+      
+      hr {
+        border: 1px solid lightgrey;
+      }
+      
+      span.price {
+        float: right;
+        color: grey;
+      }
+      
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+      @media (max-width: 800px) {
+        .row {
+          flex-direction: column-reverse;
+        }
+        .col-25 {
+          margin-bottom: 20px;
+        }
+      }
+      </style>
+  </head>
+	<body style="background-image:url('images/banner.jpg');">
+		<!--  ==== Header Section ==== -->
+		<header class="header">
+			<a href="index.html" class="logo"><img src="images/logo.jfif" alt="Logo"></a>
+			<div class="header-right">
+				<a  href="index.html">Home</a>
+				<a  href="aboutus.html">About</a>
+				<a  href="consulting.html">Consulting</a>
+				<a  href="contactus.html">Contact</a>			
+			</div>
+		</header>
+		<div class="space">
+
+		</div>
+<body>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form  onSubmit="alert('Thank You For Placing Your Order.');">
+        <span class="contact-form-title" style="color:teal;text-shadow: none;">
+          Place Your Order
+        </span>
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Name</label>
+            <input required type="text" id="fname" name="firstname" placeholder="Enter Full Name">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input required type="text" id="email" name="email" placeholder="example@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input required type="text" id="adr" name="address" placeholder="Enter Address">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input required type="text" id="city" name="city" placeholder="Enter City">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Country</label>
+                <input required type="text" id="state" name="state" placeholder="Enter Country">
+              </div>
+              <div class="col-50">
+                <label for="postal code">Postal Code</label>
+                <input required type="text" id="postalcode" name="postal" placeholder="Enter Postal Code">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment Method</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input required type="text" id="cname" name="cardname" placeholder="Name on card">
+            <label for="ccnum">Credit card number</label>
+            <input required type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input required type="text" id="expmonth" name="expmonth" placeholder="March">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input required type="text" id="expyear" name="expyear" placeholder="2020">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input required type="text" id="cvv" name="cvv" placeholder="***">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="col-50">
+            <h3>Shipping Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Name</label>
+            <input required type="text" id="fname" name="firstname" placeholder="Enter Full Name">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input required type="text" id="email" name="email" placeholder="example@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input required type="text" id="adr" name="address" placeholder="Enter Your Address">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Enter City">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Country</label>
+                <input required type="text" id="state" name="state" placeholder="Enter Country">
+              </div>
+              <div class="col-50">
+                <label for="postal code">Postal Code</label>
+                <input required type="text" id="postalcode" name="postal" placeholder="Enter Postal Code">
+              </div>
+            </div>
+          </div>
+        <input type="submit" value="Place Order" class="btn" style="background-color: teal;text-align: center;">
+        
+      </form>
+    </div>
+  </div>
+ 
+</div>
+
+</body>
+</html>

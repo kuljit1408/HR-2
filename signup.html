@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Sign Up Page</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Flowers Website">
+        <meta name="keywords" content="Flowers, Order, feedback">
+        <meta name="author" content="Rajwinder And Mandeep">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/logo.jfif" sizes="16x16">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+    </head>
+
+    <body style="background-image:url('images/banner.jpg');">
+       <div class="bg-images">
+        <!--  ==== Header Section ==== -->
+		<header class="header">
+			<a href="index.html" class="logo"><img src="images/logo.jfif" alt="Logo"></a>
+			<div class="header-right">
+				<a  href="index.html">Home</a>
+				<a  href="gallery.html">About</a>
+				<a  href="consulting.html">Consulting</a>
+				<a  href="aboutus.html">Services</a>
+				<a  href="contactus.html">Contact</a>			
+			</div>
+		</header>
+		<section>
+			<div class="space">
+
+			</div>
+
+        <!--  ==== Main Section ==== -->
+
+        <main>
+
+            <div class="container-contact">
+
+                <div class="wrap-contact">
+                    <!--  ==== Form Start ==== -->
+
+                    <form class="contact-form" method="POST"action="thankyou.html">
+
+                        <span class="contact-form-title">
+                           SIGN UP 
+                        </span>
+                        <div class="wrap-input bg1 rs1-wrap-input">
+                            <span class="label-input">FIRST NAME *</span>
+                            <input class="input" type="text" name="username" placeholder="Enter Your User Name" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required autofocus>
+                           
+                        </div>
+                        <div class="wrap-input bg1 rs1-wrap-input">
+                            <span class="label-input">LAST NAME *</span>
+                            <input class="input" type="text"name="fullname" placeholder="Enter Your Full Name" pattern="[a-zA-Z]+" required>
+                            
+                        </div>
+                        <div class="wrap-input bg1 rs1-wrap-input">
+                            <span class="label-input">Email *</span>
+                            <input class="input" type="text" name="email" placeholder="Enter Your Enail Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                           
+                        </div>
+                        <div class="wrap-input bg1 rs1-wrap-input">
+                            <span class="label-input">Phone*</span>
+                            <input class="input" type="text" name="phone" placeholder="Enter Number Phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+
+                        </div>
+                       
+                        <div class="wrap-input wrap-textarea validate-input bg0 rs1-alert-validate" data-validate = "Please Type Your Address">
+                            <span class="label-input">Address</span>
+                            <textarea class="input" name="address" placeholder="Enter Your Address"></textarea>
+                        </div>
+                        <div class="container-contact-form-btn">
+                            <button class="contact-form-btn">
+                                <span> Submit </span>
+                            </button>
+                        </div>
+                    </form>
+                <!--  ==== Form End ==== -->
+                </div>
+            </div>
+           
+       <!--  ==== Footer Section ==== -->
+		<footer>
+			<div class="footer-nav">
+				<div class="footer-box">
+					<div class="footer-logo">
+						<a href="index.html"><img src="images/logo.jfif" alt=""></a>
+					</div>
+				</div>
+				<div class="footer-box">
+					<h4>Our Company</h4>
+					<ul>
+						<li><a  href="index.html">Home</a></li>
+						<li><a  href="aboutus.html">About</a></li>
+						<li><a  href="products.html">Consulting</a></li>
+						<li><a  href="contactus.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="footer-box">
+					<h4>Contact</h4>
+					<ul>
+						<li><a href="mailto:g.kmann@hrsuperhero.ca">g.kmann@hrsuperhero.ca </a></li>
+						<li><a href="tel:647-916-6230">647-916-6230</a></li>
+
+					</ul>
+					<h4 class="follow-us">Follow us on</h4>
+					<ul class="social-icons">
+						<li><a target="_blank" href="https://www.facebook.com/yourHRteam1/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+						<li><a target="_blank" href="https://www.youtube.com/channel/UCd3IOLRf9hcNw2q2ztwjAdg/featured" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/company/hrsuperhero/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+						<li><a target="_blank" href="https://www.instagram.com/hrsuperhero/" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+					</ul>					
+				</div>
+			</div>
+			<!-- footer-bottom aera -->
+			<div class="footer-area-bottom">
+				<div class="copyright text-center">
+				  <p>
+					&copy; Copyright <strong>HRSuperhero</strong>. All Rights Reserved
+				  </p>
+				</div>
+		</div>
+			<!-- Footer End-->
+		</footer>
+	</div>
+    </body>
+</html>
